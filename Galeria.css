@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #000500;
+}
+
+.gallery {
+    /* Using percentages is good for responsive design */
+    width: 100%; 
+    /* we use flexbox to center de gallery images */
+    display: flex;
+    flex-wrap: wrap; /*allow elements to wrap to the next line */
+    justify-content: center;
+    
+}
+
+.gallery img{
+    /* Remove the space between images */
+    vertical-align: top; 
+    width: 400px;
+    margin: 20px;
+    padding: 4px;
+    border: solid 1px #636262;
+    opacity: 0.5;
+}
+
+.gallery img:hover{
+    opacity: 1;
+    border: solid 1px #fff;
+}
